@@ -63,6 +63,7 @@ function keyPressed() {
       roundDisplay.html(`Round: ${round + 1}`);
       promptSequence();
     } else {
+      roundDisplay.html(`Well done, you completed ${round} rounds`);
       console.log("Answer:");
       for (let i = 0; i < round + 1; i++) {
         console.log(promptArray[i]);
